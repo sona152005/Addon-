@@ -1,0 +1,131 @@
+1) Multi dimensional  type (1)
+class Main {
+    public static void main(String[] args) {
+    int arr[][]={{1,3,5,6,7},{2,4,7,8,9}};
+ for(int i=0;i<arr.length;i++)
+    for(int j=0;j<arr[i].length;j++){
+     System.out.println(arr[i][j]);
+        
+    }
+    }
+}
+
+
+type(2)
+class Main {
+    public static void main(String[] args) {
+    int arr[][]={{1,3,5,6,7},{2,4,7,8,9}};
+ for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr[i].length;j++){
+     System.out.print(arr[i][j]+"  ");
+        
+    }
+    System.out.println("  ");
+    }
+}
+}
+
+
+2) Single dimensional :
+class Main {
+    public static void main(String[] args) {
+    int arr[]={1,3,5,6,7};
+    int sum=0;
+    int count=0;
+    for(int i=0;i<arr.length;i++){
+        sum += arr[i];
+          count++
+        System.out.println(sum);
+        System.out.println("count is"+count);
+    }
+    }
+}
+
+
+3)
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner a = new Scanner(System.in);
+        System.out.print("enter the original price:");
+        double orginalprice = a.nextDouble();
+        System.out.print("enter your age:");
+        int age =a.nextInt();
+        double finalprice = orginalprice;
+if(age < 12){
+    finalprice=orginalprice*0.5;
+    System.out.println("below 12years you have 50% dis");
+
+}
+else {
+    if (age > 60){
+        finalprice=orginalprice*0.7;
+    }
+}
+System.out.println("final ticket" + finalprice);
+    }  
+
+
+ 4)
+import java.util.Scanner;
+ class Main{
+     public static void main(String[] args){
+         Scanner a = new Scanner(System.in);
+         System.out.print("enter theory mark:");
+         int theoryMarks = a.nextInt();
+         System.out.print("enter practical mark:");
+         int practicalMarks = a.nextInt();
+         int totalMarks = theoryMarks + practicalMarks;
+         if (theoryMarks >= 40 && practicalMarks >= 30){
+             System.out.println("student passed");
+         }
+             else if (theoryMarks < 40 && totalMarks >= 70){
+                 System.out.println("student passed");
+             }else{
+                 System.out.println("student failed");
+             }
+         }
+ }
+
+
+6) 
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner a =new Scanner (System.in);
+        String color =a.next();
+        
+    switch (color){
+       
+        case "red":
+        System.out.println("stop");
+        break;
+         case "yellow":
+        System.out.println("be ready");
+        break;
+         case "green":
+        System.out.println("go");
+        break;
+        default:
+    System.out.print("invalid color,please enter red,green,yellow");
+    }
+}
+}
+
+
+7)
+ import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner a =new Scanner (System.in);
+    int n =a.nextInt();
+    int num=1;
+    for (int i=1;i<=n;i++){
+        for (int j=1;j<=i;j++){
+            System.out.print(num + " ");
+            num++;
+        }
+        System.out.println();
+    }
+    }
+}
