@@ -1,0 +1,175 @@
+1) TO CHECK THE STRING TRUE OR FALSE:
+
+class  Main{
+    public static void main(String[] args){
+        String s1="Hello";
+        String s2= new String("Hello");
+        System.out.println(s1 == s2);
+        System.out.print(s1.equals(s2));
+    }
+}
+
+2) TO CHECK EQUAL:
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+         String s1=a.nextLine();
+         String s2=new String("ANU");
+    
+     System.out.print(s1.equals(s2));
+    }
+    
+}
+
+3)COMPARE THE THREE VALUE:
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+          String t="java is fun";
+         String s1="Java is hard";
+         String s2=new String("java is fun");
+    if(t.equals(s1)){
+    System.out.println("t is not equal to s1");
+    }
+    if(t.equals(s2))
+    {
+        System.out.println("t is not equal to s2");
+    }
+    else{
+        System.out.println("not are equal");
+    }
+}
+}
+
+4)SUBSTRING:
+
+public class Main
+{
+    public static void main(String[] args) {
+        String str="java programming";
+        System.out.println("Substring from index5:"+str.substring(5));
+         System.out.println("Substring from index0:"+str.substring(0,4));
+       
+    }  
+   
+}
+
+5) INDEX VALUE:
+
+public class Main{
+      public static void main(String[]args){
+            String str = "Java Programmming";
+        System.out.println("Indexof'prog':"+str.indexOf("Prog"));
+        System.out.println("Indexof'z':"+str.indexOf("z"));
+        
+      }
+}
+
+6)REPLACE:
+
+public class Main{
+      public static void main(String[]args){
+            String str = "Java Programmming";
+        System.out.println(str.replace('a','x'));
+       
+        
+      }
+}
+
+7)CASE SENSTIVE AND INSENSTIVE:
+
+public class Main{
+      public static void main(String[]args){
+            String str1= "java";
+            String str2= "Java";
+System.out.println("Case-sensitive equals:" + str1.equals(str2));
+        
+System.out.println("Case-insensitive equals:" + str1.equalsIgnoreCase(str2));
+        
+       
+        
+      }
+}   
+
+8)TRIM:
+
+public class Main{
+      public static void main(String[]args){
+            String str1= " java Programming ";
+            
+System.out.println("Before trim:["+str1+"]");
+        
+System.out.println("After trim:["+str1.trim()+"]");
+        
+       
+        
+      }
+} 
+
+9)INTER:
+public class Main{
+      public static void main(String[]args){
+            String str1=new String("Java Programming");
+            String str2="Java Programming";
+            String str3=str1.intern();
+System.out.println(str1==str2);
+        
+System.out.println(str2==str3);
+        
+       
+        
+      }
+}  
+
+10)MAX VALUE:
+
+ public class main{
+     public static void main(String[]agrs){
+        String str="123,456,789";
+        String[] arr=str.split (",");
+        int max=0;
+for(int i=0;i<arr.length;i++)
+{
+    if(Integer.parseInt(arr[i])>max)
+    {
+        max=Integer.parseInt(arr[i]);
+    }
+ 
+}
+ System.out.println(max);
+}
+} 
+
+11)STRING BUFFER:
+
+ public class main{
+     public static void main(String[]agrs){
+        StringBuffer str = new StringBuffer("Hello");
+        str.append("World");
+        str.insert(5,"123");
+      System.out.println(str);
+      str.replace(6,12,"Java");
+      System.out.println(str);
+}
+}   
+
+12)MAX VALUE LENGTH:
+
+public class main{
+     public static void main(String[]agrs){
+        int a=10;
+        int[]arr={1,2,4,3,5,12,10};
+        int max=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]>max)
+        {
+            max=arr[i];
+        }
+        }
+        System.out.println(max);
+     }
+ }                                                                                                                                                                                         
