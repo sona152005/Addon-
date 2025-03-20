@@ -1,0 +1,43 @@
+class Main {
+    public static void main(String[] args) {
+    Account ac=new Account("sona",1000);
+    System.out.println("AccountHolder Name:"+ac.getAccholder());
+     ac.setAccholder("sona");
+    System.out.println("update Accholder Name:"+ac.getAccholder());
+    System.out.println("Holder Balance:"+ac.getBalance());
+    ac.setBalance(2000);
+    
+    ac.setWithdraw(100);
+    System.out.println("current Balance:"+ac.getBalance());
+   
+    }
+}
+class Account{
+    private String Accholder;
+    private int Balance;
+    Account(String Accholder,int Balance){
+        this.Accholder=Accholder;
+        this.Balance=Balance;
+    }
+    public String getAccholder(){
+        return  Accholder;
+    }
+    public int getBalance(){
+        return Balance;
+    }
+    public void setBalance(int amount){
+        if(Balance > 0){
+            Balance +=amount;
+             System.out.println("Deposit Amount:"+amount);
+            System.out.println("total balance:"+Balance);
+        }
+    }
+    public void setWithdraw(int withdraw){
+        Balance -=withdraw;
+        System.out.println("Withdraw amount:"+withdraw);
+    }
+    //to update accholder name
+    public void setAccholder(String Accholder){
+        this.Accholder=Accholder;
+    }
+}
