@@ -1,0 +1,190 @@
+*AGE TO VOTE
+
+class Main{
+    public static void main(String[] args)
+    {
+        int age=30;
+        if (age>18){
+            System.out.println("eligible to vote");
+        }
+            else
+            {
+                System.out.println("not eligible to vote");
+            
+            }
+        }
+    
+}
+
+------------------------------------------------------------------------
+*AND OPERATOR:
+
+class Main{
+    public static void main(String[] args)
+    {
+        int age=4;
+        String gender="female";
+        if( gender=="female"){
+            System.out.println("ticket is free");
+
+        }
+        else if(age<16 && gender=="male")
+        {
+            System.out.println(" ticket is free");
+        
+        }
+        else
+        {
+            System.out.println("ticket is not free");
+        }
+    }
+}
+
+--------------------------------------------------------------------
+*OR OPERATOR
+
+class Main{
+    public static void main(String[] args)
+    {
+        int age=17;
+        String gender="female";
+    
+    if (age<=16 || (gender == "female"))
+    {
+        System.out.println("ticket is free");
+    }
+    else
+    {
+        System.out.println("ticket is not free");
+    }
+}
+}
+
+-------------------------------------------------------------------------
+*TICKET RATE:
+public static void main(String[] args){
+        int age = 18;
+        String gender="male";
+        if(age<17 || gender =="female"){
+            System.out.println("ticket is free");
+        }
+        else{
+            int km =10;
+            switch(km){
+                case 5:{
+                    System.out.println("50 rupees");
+                    break;
+                }
+                case 10:{
+                    System.out.println("100 rupees");
+                    break;
+                }
+                default:{
+                    System.out.println("not applicable");
+                }
+            }
+        }
+    }
+}
+
+-----------------------------------------------------------------------
+
+*FOR LOOP 
+
+*type 1
+class main{
+    public static void main(String[] args)
+    {
+        for (int i=0;i<5;i++)
+        {
+            
+            System.out.println(i);
+        
+        }
+    }
+}
+
+
+
+*type 2
+class main{
+    public static void main(String[] args)
+    {
+        for (int i=0;i<5;)
+        {
+            i++;
+            System.out.println(i);
+        
+        }
+    }
+}
+
+*type3
+class main{
+    public static void main(String[] args)
+    {
+        int i=0;
+        for (;i<5;)
+        {
+            i++;
+            System.out.println(i);
+        
+        }
+    }
+}
+
+*type4
+class main{
+    public static void main(String[] args)
+    {
+        int i=0;
+        for (;;)
+        {
+            if(i<5){
+                System.out.println(i);
+                i++;
+            }
+        }
+    }
+}
+
+------------------------------------------------------------------
+
+*FUNCTION: 
+
+
+Class main{
+    
+    void method() // function defintion
+    {
+        System.out.println("hello");
+    }
+    public static void main(String[] args)
+    {
+        // to access method
+        //creating object to method
+        main ob = new main(); 
+        ob.method(); 
+    }
+}
+
+--------------------------------------------------------------------------
+
+* adding two number
+class main{
+    
+    void method(int a, int b) // funtion defintion
+    {
+        System.out.println(a+b);
+    }
+    public static void main(String[] args)
+    {
+        // to access method
+        //creating object to method
+        main ob = new main(); 
+        ob.method(5,6); 
+    }
+}
+
+
+-----------------------------------------------------------------------------
